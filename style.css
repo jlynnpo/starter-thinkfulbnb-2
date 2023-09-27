@@ -155,7 +155,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 480px) {
 /*  body {
     display: flex;
     width: fit-content;
@@ -241,9 +241,19 @@ footer p {
   }
 
   .ideasContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   }
+
+   .ideas h3 {
+    text-align: center;
+   }
+
+   .ideas img {
+    width: 750px;
    }
 
   h3 {
@@ -273,12 +283,3 @@ footer p {
     align-items: center;
   } 
 }
-
-
-
-
-
-
-
-
-
