@@ -231,29 +231,25 @@ footer p {
 
   #ideas img {
     display: flex;
-    flex-direction: block;
-    flex-grow: 1; 
-    margin: auto; 
+    margin: 0 auto 0; 
   }
 
   #ideas div {
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+
+  #ideas h3 {
+    text-align: center;
   }
 
   .ideasContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-   }
-
-   .ideas h3 {
-    text-align: center;
-   }
-
-   .ideas img {
-    width: 750px;
+    justify-content: center;
+    column-gap: 15px;
+    max-width: 1280px;
+    margin: 0 auto;
    }
 
   h3 {
